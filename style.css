@@ -259,6 +259,7 @@
     position: absolute;
     top: 90%;
     right: 100px;
+    z-index: 99999;
   }
     
   .whats{
@@ -276,14 +277,15 @@
     animation-name: botao-whats;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    
   }
   
   
   .whats:hover{
-    background-color: var(--cor-branca);
+    background-color: #ffffff;
     color: #029e3b;
     font-weight: 900;
-    box-shadow: 2px 2px 2px #5fe690;
+    box-shadow: 1px 1px 10px 3px #5fe690;
   }
   
   @keyframes botao-whats {
