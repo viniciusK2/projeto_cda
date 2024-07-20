@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+  overflow-x: hidden;
+}
+
 .bs-flag {
     padding: 10px 22px 15px 10px;
     z-index: 9999;
@@ -217,6 +221,12 @@
       font-size: 3.5rem;
     }
   }
+  /*media para conteúdo nossos projetos  */
+  @media(max-width: 460px){
+    .carousel-item{
+      padding: 1.1rem !important;
+    }
+  }
   
 .carousel-img {
   position: relative;
@@ -304,6 +314,7 @@
   /*/ Icone whats */
 
   /* Projects*/
+
   .text-highlight{
     color: #20A6FF;
     font-weight: 500;
@@ -419,9 +430,6 @@
 
 /* Footer */
 /* Rede social */
-#footer{
-  height: 300px;
-}
 
 #logo-footer{
   width: 150px;
