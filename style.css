@@ -272,7 +272,11 @@ body{
     right: 100px;
     z-index: 99999;
   }
-    
+    @media screen and (max-width:800px){
+      .icone-whats{
+        top: 80%;
+      }
+    }
   .whats{
     position: fixed;
     background-color: #01e675;
@@ -471,10 +475,4 @@ body{
 /*/ Rede social */
 
 /*/ Footer */
-
-
-
-.teste{
-  display: none;
-}
 
