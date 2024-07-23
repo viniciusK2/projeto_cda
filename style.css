@@ -476,3 +476,6 @@ body{
 
 /*/ Footer */
 
+.esconde-menu{
+  display: none;
+}
