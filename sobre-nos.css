@@ -1,0 +1,46 @@
+body{
+    background-color: #c6c6c6;
+}
+
+.navbar{
+    position: relative;
+    width: 80vw !important;
+}
+
+/* Imagens seção nossa infraestrutura */
+
+.carousel-img {
+    position: relative;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+.carousel-img:nth-child(1){
+    background-image: url(img/imagem-4.png);
+}
+.carousel-img:nth-child(2){
+    background-image: url(img/imagem-5.png);
+}
+.carousel-img:nth-child(3){
+    background-image: url(img/imagem-6.png);
+}
+.carousel-img:nth-child(4){
+    background-image: url(img/imagem-7.png);
+}
+.carousel-img:nth-child(5){
+    background-image: url(img/imagem-8.png);
+}
+
+.carousel-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+/*/ Imagens seção nossa infraestrutura */
