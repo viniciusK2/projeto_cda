@@ -2,21 +2,26 @@ body{
     background-color: #c6c6c6;
 }
 
+
 .navbar{
-    position: relative;
+
     width: 80vw !important;
 }
 
 /* Imagens seção nossa infraestrutura */
 
 .carousel-img {
-    position: relative;
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
+   position: relative;
+   height: 80vh;
+   background-size: cover;
+   background-position: center;
+   aspect-ratio: 1/1;/*Deixa a imagem quadrada, mas ao mesmo distorce*/
+   object-fit: cover;/*Corrige a distorção*/
+   border-radius: 50%;/*Deixa redonda*/
   }
-  
-
+.carousel-inner{
+    border-radius: 50%;
+}
 .carousel-img:nth-child(1){
     background-image: url(img/imagem-4.png);
 }
@@ -44,3 +49,29 @@ body{
   }
 
 /*/ Imagens seção nossa infraestrutura */
+
+/* Sobre */
+.sobre-paragrafo{
+    font-size: 1.17rem;
+    font-weight: 400;
+    width: 85%;
+  
+
+}
+/*/ Sobre */
+
+
+
+/* Nossa Equipe */
+.img-equipe{
+    width: 15%;
+   aspect-ratio: 1/1;/*Deixa a imagem quadrada, mas ao mesmo distorce*/
+   object-fit: cover;/*Corrige a distorção*/
+   border-radius: 50%;/*Deixa redonda*/
+}
+/*/ Nossa Equipe */
+
+
+.some-menu{
+    display: none;
+ }
