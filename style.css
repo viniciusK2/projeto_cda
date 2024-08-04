@@ -488,3 +488,6 @@ body{
 .esconde-menu{
   display: none;
 }
+.row{
+  margin-right: 0;/*Tirar a margem porque está dando quebra no footer*/
+}
