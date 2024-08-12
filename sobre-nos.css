@@ -22,20 +22,32 @@ body{
 .carousel-inner{
     border-radius: 50%;
 }
+
+@media screen and (max-width: 900px) {
+    .carousel-inner{
+        border-radius: 45%;
+    }
+}
+
 .carousel-img:nth-child(1){
     background-image: url(img/imagem-4.png);
+
 }
 .carousel-img:nth-child(2){
     background-image: url(img/imagem-5.png);
+    width: 100% !important;
 }
 .carousel-img:nth-child(3){
     background-image: url(img/imagem-6.png);
+    width: 100% !important;
 }
 .carousel-img:nth-child(4){
     background-image: url(img/imagem-7.png);
+    width: 100% !important;
 }
 .carousel-img:nth-child(5){
     background-image: url(img/imagem-8.png);
+    width: 100% !important;
 }
 
 .carousel-inner:after {
@@ -66,9 +78,9 @@ body{
     }
 }
 
-@media  screen and (max-width: 900px) {
-    section .carousel-img-sobre{
-        width: 70%;
+@media  screen and (max-width: 1200px) {
+    #carousel-img-sobre{
+        width: 80% !important;
         height: 100%;
     }
     
@@ -129,10 +141,16 @@ body{
 
 /* Nossa Equipe */
 .img-equipe{
-    width: 15%;
+   width: 50%;
    aspect-ratio: 1/1;/*Deixa a imagem quadrada, mas ao mesmo distorce*/
    object-fit: cover;/*Corrige a distorção*/
    border-radius: 50%;/*Deixa redonda*/
+}
+
+@media screen and (max-width: 800px) {
+    .img-equipe{
+        width: 40%;
+    }
 }
 /*/ Nossa Equipe */
 
