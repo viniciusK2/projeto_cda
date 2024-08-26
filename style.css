@@ -185,10 +185,10 @@ body{
 
   @media (min-width: 320px) {
     p.slider-text {
-      font-size: 1.2rem ;
+      font-size: 1.3rem ;
     }
     h1.slider-text {
-      font-size: 0.8rem ;
+      font-size: 1rem ;
     }
   }
 
@@ -323,7 +323,7 @@ body{
   /* Projects*/
 
   .text-highlight{
-    color: #20A6FF;
+    /* color: #20A6FF; */
     font-weight: 500;
   }
 
@@ -369,15 +369,19 @@ body{
   
   /* GALLERY */
   .text-different{
-    color: #20A6FF;/*626362*/
+    /* color: #20A6FF; */
+    /*626362*/
     font-weight: 500;
-    text-shadow: 2px 2px 1px rgb(253, 255, 255);
+    /* text-shadow: 2px 2px 1px rgb(253, 255, 255); */
   }
 
   .text-gallery{
-    color: #20A6FF;/*626362*/
+    /* color: #20A6FF; */
+    /*626362*/
+    color: #fff;
     font-weight: 500;
-    text-shadow: 1px 1px 1px rgb(253, 255, 255);
+    font-size: 1.3em !important;
+    /* text-shadow: 1px 1px 1px rgb(253, 255, 255); */
    
   }
 
