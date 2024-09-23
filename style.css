@@ -100,16 +100,21 @@ body{
 .img-logo{
   width: 120px;
 }
-
+.menu-item{
+  color: #ffffff !important;
+  font-size: 1.3rem;
+}
 
 .menu-link{
   color: #000000;
   font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .btn-primary{
   background-color: #20A6FF;
   transition: 600ms ease-in-out;
+  font-size: 1.1rem;
 }
 
 .btn-primary:hover{
@@ -239,20 +244,24 @@ body{
 }
 
 .carousel-img:nth-child(2){
-    background-image: url("./img/banner-1.png");
+    background-image: url("./img/img-banners/banner-1.png");
 }    
 
 .carousel-img:nth-child(3){
-    background-image: url("./img/banner-2.png");
+    background-image: url("./img/img-banners/banner-2.png");
 
 }
 
 .carousel-img:nth-child(4){
-    background-image: url('./img/banner-3.jpg');
+    background-image: url('./img//img-banners/banner-3.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .carousel-img:nth-child(5) {
-    background-image: url("./img/banner-4.png");
+    background-image: url("./img/img-banners/banner-4.png");
+    
 }
   
   .carousel-inner:after {
@@ -322,7 +331,7 @@ body{
 
   /* Projects*/
 
-  .text-highlight{
+  .text-destaque{
     /* color: #20A6FF; */
     font-weight: 500;
   }
@@ -411,9 +420,13 @@ body{
   .gallery-img {
     border-radius: 25px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
-    max-width: 75%;
+    max-width: 85%;
+    height: 35vh !important;
   }
   
+  .width-img{
+    width: 385px !important;
+  }
   /* md+ */
   @media all and (min-width: 768px) {
     .gallery-img {
@@ -428,6 +441,11 @@ body{
       max-width: 1366px;
     }
   }
+
+  .paragrafo-destaque{
+    font-size: 1.1rem;
+  }
+
   /* /GALLERY */
 
   /* Form */
@@ -439,6 +457,13 @@ body{
   border-radius: 5%;
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, .5);
   padding: 50px;
+}
+
+@media  screen and (min-width:1000px) and (max-width: 1150px) {
+  #form{
+    width: 40% !important;
+    margin: 0 5%  !important;
+  }
 }
 /*/ Form */
 
@@ -454,7 +479,7 @@ body{
 .redes-sociais {
   font-size: 2.5rem;
   background-color: #374788;
-  padding: 10px;
+  padding: 5px 12px;
   border-radius: 10px;
   transition: 600ms ease-in-out;
   cursor: pointer;

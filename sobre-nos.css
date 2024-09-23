@@ -99,24 +99,24 @@ body{
     }
 }
 .carousel-img:nth-child(1){
-    background-image: url(img/loja-1.jpg);
+    background-image: url("img/img-fabrica/fabrica-1.jpg");
    
 
 }
 .carousel-img:nth-child(2){
-    background-image: url(img/loja-2.jpg);
+    background-image: url("img//img-fabrica/fabrica-2.jpg");
     width: 100% !important;
 }
 .carousel-img:nth-child(3){
-    background-image: url(img/loja-3.jpg);
+    background-image: url("img/img-fabrica/fabrica-3.jpg");
     width: 100% !important;
 }
 .carousel-img:nth-child(4){
-    background-image: url(img/loja-4.jpg);
+    background-image: url("img/img-fabrica/fabrica-4.jpg");
     width: 100% !important;
 }
 .carousel-img:nth-child(5){
-    background-image: url(img/imagem-8.png);
+    background-image: url("img/img-fabrica/fabrica-5.jpg");
     width: 100% !important;
 }
 
