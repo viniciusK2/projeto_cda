@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sobre-nos.css">
-    <link rel="icon" href="img/img-logos/icon-cda.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/sobre-nos.css">
+    <link rel="icon" href="assets/img/img-logos/icon-cda.png">
     <title>Sobre nós - CDA Esquadrias de Alumínio</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
         <div class="container">
           
             <!-- logo -->
-          <a class="navbar-brand fs-4" href="#"><img class="img-logo" src="img/img-logos/logo-cda-fundo-branco.png" alt=""></a>
+          <a class="navbar-brand fs-4" href="index.html"><img class="img-logo" src="assets/img/img-logos/logo-cda-fundo-branco.png" alt=""></a>
 
             <!-- botão alternador -->
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -68,7 +68,7 @@
     <div class="row mb-5 pt-5 container-100vh align-items-center">
         <h1 class="title-principal text-center pb-5 pt-3">Conheça a CDA</h1>
         <section class="d-flex flex-column justify-content-center align-items-center col-xxl-6 col-xl-6">
-              <img class="carousel-img-sobre" src="img/cda-fachada.png" alt="">
+              <img class="carousel-img-sobre" src="assets/img/cda-fachada.png" alt="Imagem da fachada da CDA Esquadrias">
         </section>
         <section class="d-flex align-items-center justify-content-center col-lg-12 col-xl-6 pt-md-5 pt-xl-0">
           <p class="sobre-paragrafo pt-5 pt-md-0">
@@ -94,8 +94,8 @@
         <span class="bs-flag-width">0px</span>
     </div>
     
-    <div class="container-100vh pb-5">
-      <h2 class="title-principal pb-5 pt-5 text-center">Nossa Infraestrutura</h2>
+    <div class="container-infra container-100vh pb-5 mb-5">
+      <h2 class="title-principal pb-5 pt-5 text-center text-white">Nossa Infraestrutura</h2>
       <div class="row justify-content-center align-items-center pb-5">
         <section class="col-xl-6 col-xxl-6"><!--Classe para alinhar no centro-->
             <div id="slider" class="carousel slide d-flex justify-content-end" data-bs-ride="carousel">
@@ -122,7 +122,7 @@
             </div>
         </section>
         <section id="container-text" class="col-xl-6 col-xxl-6 d-flex justify-content-center">
-            <p class="text-start sobre-paragrafo pt-5 pt-xl-0">
+            <p class="text-start sobre-paragrafo pt-5 pt-xl-0 text-white">
                 Bem-vindo à nossa fábrica de esquadrias de alumínio, onde tradição e inovação se encontram para oferecer produtos de alta qualidade e durabilidade. Com anos de   experiência no mercado, somos especializados na fabricação de portas, janelas, fachadas e outros componentes arquitetônicos que valorizam e protegem os mais diversos tipos de construções. <br>
                 Nossa fábrica está equipada com tecnologia de ponta, que nos permite garantir precisão em cada detalhe e eficiência em todos os processos. Desde a seleção cuidadosa das matérias-primas até a montagem final, cada etapa é rigorosamente controlada para assegurar que nossos produtos atendam aos mais altos padrões de qualidade. <br>
                 Valorizamos a sustentabilidade, e por isso, adotamos práticas que minimizam o impacto ambiental. Utilizamos alumínio 100% reciclável e implementamos processos produtivos que otimizam o uso dos recursos, sem comprometer o desempenho e a estética de nossas esquadrias. <br>
@@ -157,24 +157,23 @@
       </div> -->
 
       <div>
-        <section>
-          <h2 class="text-center">Nossa Fábrica</h2>
-          <video src=""></video>
+        <section class="d-flex flex-column align-items-center pb-5 mb-5">
+          <h2 class="title-principal text-center pb-5">Conheça a Nossa Fábrica</h2>
+          <video class="video-fachada" src="assets/video/fachada-cda.mp4" controls poster="assets/img/cda-fachada.png"></video>
         </section>
       </div>
 
     </main>
-    <footer id="footer" class="container-fundo-destaque ">
+    <footer id="footer" class="container-fundo-destaque">
         <div class="row d-flex align-items-center ">
           <div class="col-12 mx-0 col-md-4 py-4 px-5 text-center">
-            <a class="" href="#"><img id="logo-footer"  mx-5 py-3" src="img/img-logos/logo-cda-fundo-branco.png" alt="Logo da empresa CDA"></a>
+            <a href="index.html"><img id="logo-footer"  mx-5 py-3" src="assets/img/img-logos/logo-cda-fundo-branco.png" alt="Logo da empresa CDA"></a>
     
           </div>
           <div class="d-flex gap-5 align-items-center justify-content-center col-12 col-md-4 pb-4">
             <i class="redes-sociais fa-brands fa-whatsapp text-white"><a href="#"></a></i>
             <i class="redes-sociais fa-brands fa-instagram text-white"><a href="#"></a></i>
-            <i class="redes-sociais fa-brands fa-facebook-f text-white"><a href="#"></a></i>
-    
+            <!-- <i class="redes-sociais fa-brands fa-facebook-f text-white"><a href="#"></a></i> -->
     
           </div>
         </div>

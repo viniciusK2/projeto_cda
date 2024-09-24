@@ -45,6 +45,10 @@ body{
 
 /* Imagens seção nossa fabrica */
 
+.container-infra{
+    background-color: #13256b;
+}
+
 .carousel-inner{
     border-radius: 10%;
     width: 90%;
@@ -86,37 +90,48 @@ body{
         font-size: 1.1em;
         width: 95%;
     }
- 
+    .title-principal{
+        font-size: 2em !important;
+    }
     .carousel-img{
         max-width: 90% !important;
         height: 70vh;
     }
+    .video-fachada{
+        width: 80% !important;
+    }
 }
+
+
 @media screen and (max-width: 500px){
     .carousel-img{
         max-width: 90% !important;
         height: 50vh;
     }
+    .title-principal{
+        font-size: 1.5em  !important;
+    }
+    
 }
 .carousel-img:nth-child(1){
-    background-image: url("img/img-fabrica/fabrica-1.jpg");
+    background-image: url("../img/img-fabrica/fabrica-1.jpg");
    
 
 }
 .carousel-img:nth-child(2){
-    background-image: url("img//img-fabrica/fabrica-2.jpg");
+    background-image: url("../img/img-fabrica/fabrica-2.jpg");
     width: 100% !important;
 }
 .carousel-img:nth-child(3){
-    background-image: url("img/img-fabrica/fabrica-3.jpg");
+    background-image: url("../img/img-fabrica/fabrica-3.jpg");
     width: 100% !important;
 }
 .carousel-img:nth-child(4){
-    background-image: url("img/img-fabrica/fabrica-4.jpg");
+    background-image: url("../img/img-fabrica/fabrica-4.jpg");
     width: 100% !important;
 }
 .carousel-img:nth-child(5){
-    background-image: url("img/img-fabrica/fabrica-5.jpg");
+    background-image: url("../img/img-fabrica/fabrica-5.jpg");
     width: 100% !important;
 }
 
@@ -133,6 +148,13 @@ body{
 /*/ Imagens seção nossa infraestrutura */
 
 /* Nossa Fábrica */
+.video-fachada{
+    border-radius: 20px;
+    width: 50%;
+}
+
+/* /Nossa Fábrica */
+
 
 
 

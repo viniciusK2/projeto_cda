@@ -244,23 +244,23 @@ body{
 }
 
 .carousel-img:nth-child(2){
-    background-image: url("./img/img-banners/banner-1.png");
+    background-image: url("../img/img-banners/banner-1.png");
 }    
 
 .carousel-img:nth-child(3){
-    background-image: url("./img/img-banners/banner-2.png");
+    background-image: url("../img/img-banners/banner-2.png");
 
 }
 
 .carousel-img:nth-child(4){
-    background-image: url('./img//img-banners/banner-3.jpg');
+    background-image: url('../img//img-banners/banner-3.jpg');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .carousel-img:nth-child(5) {
-    background-image: url("./img/img-banners/banner-4.png");
+    background-image: url("../img/img-banners/banner-4.png");
     
 }
   
