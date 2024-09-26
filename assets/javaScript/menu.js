@@ -1,83 +1,33 @@
-// let menu = document.getElementById('menu-nav')
-// let menuCor = document.getElementById('menu-muda-cor')
-// let menuItem = document.querySelector('.menu-item')
-// let whats = document.querySelector('.icone-whats')
-// let footer = document.getElementById('footer')
-
-// let posFooter = footer.getBoundingClientRect().y.toFixed(0)
-// console.log(posFooter)
-// document.addEventListener('scroll', rolar)
-
-// let ultimaPosicao = 0;
-
-// function rolar(){
-//     let posicaoAtual = window.scrollY || document.documentElement.scrollTop;
-
-//     let footerRect = footer.getBoundingClientRect()
-//     let viewportHeight = window.innerHeight;
-
-//     if(posicaoAtual > ultimaPosicao){
-//         document.getElementById('menu-nav').className = "esconde-menu";
-//     } else{
-//      document.getElementById('menu-nav').className = ""
-//     }
-//     // if(posicaoAtual > 800 && posicaoAtual < 1800 || posicaoAtual > 2800 && posicaoAtual < 3800 || posicaoAtual > 4300 && posicaoAtual < 5800){
-//     //     menuCor.style.backgroundColor = "#606d80"
-//     //     // menuItem.style.color = '#20A6FF';
-//     //     // menuItem.style.fontWeight = '500';
-//     // } else{
-//     //     menuCor.style.backgroundColor = ""
-//     //     // menuItem.style.color = '';
-//     //     // menuItem.style.fontWeight = '';
-//     // }
-
-
-//     if(posicaoAtual + viewportHeight > footerRect.top){
-//         whats.style.display = 'none'
-//     }else{
-//         whats.style.display = 'block'
-
-//     }
-
-   
-//     ultimaPosicao = posicaoAtual
-// }
-
-
 let menu = document.getElementById('menu-nav');
 let menuCor = document.getElementById('menu-muda-cor');
 let menuItem = document.querySelector('.menu-item');
-let whats = document.querySelector('.icone-whats');
-let footer = document.getElementById('footer');
+let whats = document.getElementById('icone-whats');
+let footer = document.getElementById('footer');//Captura o footer
 
-document.addEventListener('scroll', rolar);
 
-let ultimaPosicao = 0;
 
-function rolar() {
-    let posicaoAtual = window.scrollY || document.documentElement.scrollTop;
-    let footerRect = footer.getBoundingClientRect();//Capturando a posição do elemento footter
-    let whatsRect = whats.getBoundingClientRect()//Capturando a posição do elemento em relação a página do icone whats 
-    console.log(whatsRect.y)
-    let viewportHeight = window.innerHeight;//Pega o tamanho da viewport
-
-    console.log('Posição Atual:', posicaoAtual);
-    console.log('Top do Footer:', footerRect.top);
-    console.log('Altura da Viewport:', viewportHeight);
-
-    if (posicaoAtual - 3900 > footerRect.top) {//Se a posição atual for maior que o topo do footer, o icone do whats irá sumir.
-        console.log('Footer alcançado ou ultrapassado.');//Debug
-        whats.style.display = 'none';
-    } else {
-        console.log('Footer ainda não alcançado.');//Debug
-        whats.style.display = 'block';
+//Some e aparece o icone whats
+document.addEventListener("scroll", ()=>{//Evento de scroll
+    //Verifica se o topo do footer - a altura da tela for menor ou igual a zero, o elemento whats irá sumir, se não o elemento o whats será mostrado
+    if(footer.getBoundingClientRect().top - innerHeight <= 0){
+        document.querySelector("#icone-whats").style.display = "none"
+    }else{
+        document.querySelector("#icone-whats").style.display = "block"
     }
+})
 
 
+let ultimaPosicao = 0;//Define a última posição
+
+document.addEventListener("scroll", ()=>{//Evento de scrolar a tela
+    //Posição atual recebe a posição do scroll no eixo Y
+    let posicaoAtual = scrollY
+    //Se a posição atual for maior que a última posição que é zero, o menu será escondido, se não, o menu irá aparece.
     if(posicaoAtual > ultimaPosicao){
-       document.getElementById('menu-nav').className = "esconde-menu";
-    } else{
-          document.getElementById('menu-nav').className = ""
-    }
-    ultimaPosicao = posicaoAtual;
-}
+        document.getElementById('menu-nav').className = "esconde-menu";
+     } else{
+           document.getElementById('menu-nav').className = "block"
+     }
+     //ultima posição recebe a posição atual toda vez que a função for chamada, ou seja se a posição atual for 50 na última vez que a função for chamada esse será o valor atribuido a última posicao. Quando ocorre um novo if a posição atual receberá um novo valor, por exemplo 20, então 20 não será maior que 50, fazendo o menu aparecer, isso indica que o usuário está scrolando para cima. 
+     ultimaPosicao = posicaoAtual;
+})
