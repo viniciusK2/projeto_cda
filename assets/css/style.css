@@ -81,6 +81,7 @@ body{
   left: auto;
   right: auto;
   z-index: 999999;
+  
 
 }
 
@@ -298,6 +299,7 @@ body{
     top: 90%;
     right: 100px;
     z-index: 99999;
+    transition: 1s ease-in-out;
   }
     @media screen and (max-width:800px){
       .icone-whats{
@@ -539,9 +541,8 @@ body{
 
 /*/ Footer */
 
-.esconde-menu{
-  display: none;
-}
+
+
 .row{
   margin-right: 0;/*Tirar a margem porque está dando quebra no footer*/
 }
