@@ -505,22 +505,37 @@ body{
 }
 .redes-sociais {
   font-size: 2.5rem;
-  background-color: #374788;
+  background: linear-gradient(var(--cor1), var(--cor2));
   padding: 5px 12px;
   border-radius: 10px;
-  transition: 600ms ease-in-out;
+  transition: --cor1 1s, --cor2 2s;
   cursor: pointer;
+
 }
 
 .redes-sociais:nth-child(1):hover {
   color: #ffffff !important;
-  background-color: #25D366;
+  --cor1: #25D366;
+  --cor2: #25D366;
 }
 
-
+/*Gradiente instagram*/
+@property --cor1{
+  syntax: '<color>';
+  initial-value: #374788;
+  inherits: false;
+}
+@property --cor2{
+  syntax: '<color>';
+  initial-value: #374788;
+  inherits: false;
+}
 .redes-sociais:nth-child(2):hover {
   color: #ffffff !important;
-  background: linear-gradient(#515BD4 10%, #DD2A7B 90%);
+  --cor1: #515bd4;
+  --cor2: #dd2a7b;
+  /* background: linear-gradient(#515BD4 10%, #DD2A7B 90%); */
+  
 }
 
 .redes-sociais:nth-child(3):hover {
