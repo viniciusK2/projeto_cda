@@ -4,37 +4,7 @@
 body{
   overflow-x: hidden;
   background-color: #f0f0f0;
-}
-
-.bs-flag {
-    padding: 10px 22px 15px 10px;
-    z-index: 9999;
-  
-    position: fixed;
-    left: 0;
-    top: 0;
-  
-    background-color: #7431f9;
-    border-bottom-right-radius: 25px;
-    
-    /* font */
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1;
-  }
-  
-  .bs-flag span {
-    float: left;
-  }
-  
-  .bs-flag > span:not(.bs-flag-width) {
-    margin-right: 5px;
-  }
-  
-  
-  
-  
+} 
   
   /* GLOBAL */
   body {
@@ -76,38 +46,21 @@ body{
 
 /*classe pai que fixa o elemento */
 .fixed-top{
-  background-color: rgba(255, 249, 249, 0.35);
-  top: 20px;
+  background-color: rgba(19, 37, 107, 0.80);
+  top: 0px;
   left: auto;
   right: auto;
   z-index: 999999;
-  
-
+  width: 100% !important;
 }
 
-/*Serve para mudar a cor do sidebar e colocar o efeito de blur*/
-@media(max-width: 991px){
-  .sidebar{
-    background-color: rgba(42, 169, 223, 0.5);
-    backdrop-filter: blur(5px);
-  }
-  .offcanvas-backdrop{
-    background-color: rgba(32, 91, 125, 0.5);
-  }
-}
-
-
-
-.img-logo{
-  width: 120px;
-}
 .menu-item{
   color: #ffffff !important;
   font-size: 1.3rem;
 }
 
 .menu-link{
-  color: #000000;
+  color: #ffffff;
   font-weight: 500;
   font-size: 1.3rem;
 }
@@ -122,19 +75,35 @@ body{
   background-color: #1c87cf;
 }
 
+/*Serve para mudar a cor do sidebar e colocar o efeito de blur*/
+@media(max-width: 991px){
+  .sidebar{
+    background-color: rgba(42, 169, 223, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  .offcanvas-backdrop{
+    background-color: rgba(32, 91, 125, 0.5);
+  }
+}
+
+.img-logo{
+  width: 120px;
+}
+
+
 /*Define a quebra e o tamanho menu*/
 @media(min-width: 992px) {
-  .navbar-expand-lg{
+  /* .navbar-expand-lg{
     width: 92% !important;
-  }
+  } */
   
 }
 
 /*Define a quebra e o tamanho do menu*/
 @media(min-width: 1100px) {
-  .navbar-expand-lg{
+  /* .navbar-expand-lg{
     width: 85% !important;
-  }
+  } */
   
 }
 /*/ Header*/
@@ -490,6 +459,9 @@ body{
   #form{
     width: 40% !important;
     margin: 0 5%  !important;
+  }
+  .sombraForm{
+    padding: 20px;
   }
 }
 /*/ Form */

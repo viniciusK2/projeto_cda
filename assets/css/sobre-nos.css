@@ -1,12 +1,12 @@
 body{
-    background-color: #c6c6c6;
+    background-color: #ffffff;
 }
 
 
-.navbar{
+/* .navbar{
 
     width: 80vw !important;
-}
+} */
 
 .title-principal{
     font-size: 2.6rem !important;
@@ -85,6 +85,15 @@ body{
     
 }
 
+@media screen and (max-width: 1000px) {
+    .video-fachada{
+        width: 70% !important;
+    }
+    #container-tela-menor  .container-100vh{
+        height: 50% !important;
+        min-height: 0;
+    }
+}
 @media screen and (max-width: 800px){
     .sobre-paragrafo{
         font-size: 1.1em;
@@ -99,6 +108,10 @@ body{
     }
     .video-fachada{
         width: 80% !important;
+    }
+    #container-tela-menor  .container-100vh{
+        height: 50% ;
+        min-height: 0;
     }
 }
 
@@ -151,13 +164,10 @@ body{
 .video-fachada{
     border-radius: 20px;
     width: 50%;
+
 }
 
 /* /Nossa Fábrica */
-
-
-
-
 
 /* Nossa Equipe */
 .img-equipe{
@@ -177,4 +187,4 @@ body{
 
 .some-menu{
     display: none;
- }
+}
